@@ -1,0 +1,850 @@
+/* Estilos Globales */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding-top: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 15em;
+    height: auto;
+}
+
+.main-nav {
+    background-color: #0066cc;
+    padding: 1em 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.main-nav ul li::after {
+    content: '|';
+    color: #fff;
+    margin-left: 1em;
+}
+
+.main-nav ul li:last-child::after {
+    content: '';
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sección Hero */
+.hero {
+    background-image: url('../sources/images/Foto-Culto-Aposento-Alto-Bucaramanga-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    padding: 2em;
+}
+
+.hero-text #hero-t1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.hero-text #hero-t2 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.hero-text #hero-t1, .hero-text #hero-t2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Sección Sobre Nosotros */
+.about {
+    padding: 4em 0;
+    background-color: #f5f5f5;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-box {
+    background-color: #ffc30e;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-box h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.highlight img {
+    margin-right: 1em;
+    max-width: 40px;
+    height: auto;
+}
+
+.highlight p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #0066cc;
+    font-weight: 700;
+}
+
+/* Sección Nuestras Creencias */
+.beliefs {
+    padding: 4em 0;
+    background-color: #ffffff;
+}
+
+.beliefs-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beliefs-text {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.beliefs-image {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.beliefs-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    color: #0066cc;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.beliefs-list {
+    list-style-position: inside;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.beliefs-list li::marker {
+    font-weight: bold;
+}
+
+/* Sección Pastores */
+.pastors {
+    padding: 4em 0;
+    background-color: #f5f5f5;
+}
+
+.pastors-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pastor-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.pastor-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pastor-image:not(:last-child) {
+    margin-right: -4px;
+}
+
+.overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    box-sizing: border-box;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+}
+
+.overlay p#pastor-names {
+    font-size: 2rem;
+    color: #ffc30e;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Sección Hero Services */
+.hero-services {
+    padding: 4em 0;
+    background-image: url('../sources/images/Reuniones-y-Cultos-Iglesia-Aposento-Alto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-services .hero-text {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+.hero-services .hero-text p {
+    margin: 0.5em 0;
+}
+
+.hero-services .hero-text p#services-t1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-services .hero-text p#services-t2 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    z-index: 2;
+    margin: 2em auto 6em;
+    gap: 1em;
+}
+
+.service-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5em;
+    flex: 1;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service-box img {
+    max-width: 50px;
+    margin-bottom: 0.5em;
+}
+
+.service-box h3 {
+    font-size: 1.75rem;
+    margin: 0.5em 0;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.service-box p {
+    font-size: 1.25rem;
+    color: #ffcc00;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Sección Ubicación */
+.location {
+    padding: 4em 0;
+    background-color: #ffffff;
+}
+
+.location-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.title-box h2 {
+    background-color: #ffc30e;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.location-image {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 1em;
+}
+
+.location-image img {
+    max-width: 70%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.location-text {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.location-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+.location-text p strong {
+    color: #0066cc;
+    display: block;
+}
+
+/* Sección de Contacto */
+.contact {
+    padding: 4em 0;
+    background-color: #f5f5f5;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+.contact-form {
+    flex: 1 1 55%;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 0.75em 2em;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.contact-form button:hover {
+    background-color: #004999;
+}
+
+/* Footer */
+.footer {
+    background: #002244; /* Fondo sólido para mayor contraste */
+    color: #ffffff;
+    padding: 3em 0; /* Espaciado uniforme */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    padding: 1em;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: #ffcc00; /* Títulos en amarillo vibrante */
+}
+
+.footer-section p, 
+.footer-section ul {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #f0f0f0; /* Color de texto más claro para mayor legibilidad */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-section ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00; /* Color amarillo en hover */
+}
+
+.footer-section.aboutfinal p {
+    color: #f0f0f0; /* Texto más claro para contraste */
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 0; /* Eliminar padding extra */
+    text-align: center; /* Volver a centrar el texto */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1em; /* Espaciado entre íconos */
+}
+
+.social-links a {
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a img {
+    width: 32px; /* Tamaño uniforme para los íconos */
+    height: 32px;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 2em;
+    font-size: 0.9rem;
+    color: #ffcc00;
+    text-align: center;
+    border-top: 1px solid #0055a5; /* Sutil borde superior para separación */
+    padding-top: 1em;
+}
+
+/* Asegurando que el contenido esté bien alineado y sea legible */
+.footer-content, .footer-section.about p {
+    text-align: center;
+}
+
+/* Media Queries para Pantallas Medianas (max-width: 768px) */
+@media (max-width: 768px) {
+    /* General */
+    .logo img {
+        max-height: 8em;
+    }
+
+    .main-nav ul {
+        gap: 1em;
+    }
+
+    .hero {
+        height: 30em;
+    }
+
+    .hero-text #hero-t1 {
+        font-size: 2rem;
+    }
+
+    .hero-text #hero-t2 {
+        font-size: 1.25rem;
+    }
+
+    .about-content, .beliefs-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img, .beliefs-image img {
+        margin: 0 auto;
+    }
+
+    .title-box {
+        max-width: 90%;
+    }
+
+    .pastors-content {
+        flex-direction: column;
+    }
+
+    .overlay {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2em;
+    }
+
+    .overlay h2 {
+        font-size: 2rem;
+    }
+
+    .overlay p#pastor-names {
+        font-size: 1.25rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .hero-services #services-t1 {
+        font-size: 2rem;
+    }
+
+    .hero-services #services-t2 {
+        font-size: 1.25rem;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .service-box {
+        margin-bottom: 1em;
+    }
+
+    /* Ubicación y Contacto */
+    .location-content, .contact-content {
+        flex-direction: column;
+    }
+
+    .location-image img {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .location-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .contact-image img {
+        width: 60%;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+/* Media Queries para Pantallas Pequeñas (max-width: 480px) */
+@media (max-width: 480px) {
+    /* General */
+    .logo img {
+        max-height: 6em;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .hero {
+        height: 25em;
+    }
+
+    .hero-text #hero-t1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text #hero-t2 {
+        font-size: 1rem;
+    }
+
+    .title-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .beliefs-list {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    .overlay h2 {
+        font-size: 1.75rem;
+    }
+
+    .overlay p#pastor-names {
+        font-size: 1.1rem;
+    }
+
+    .overlay p {
+        font-size: 0.875rem;
+    }
+
+    .hero-services #services-t1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-services #services-t2 {
+        font-size: 1rem;
+    }
+
+    .service-box h3 {
+        font-size: 1.25rem;
+    }
+
+    .service-box p {
+        font-size: 0.875rem;
+    }
+
+    /* Ubicación y Contacto */
+    .location-content, .contact-content {
+        flex-direction: column;
+    }
+
+    .location-image img {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .location-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .contact-image img {
+        width: 80%;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    .footer-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .footer-section p, 
+    .footer-section ul {
+        font-size: 0.875rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        font-size: 0.75rem;
+    }
+}
